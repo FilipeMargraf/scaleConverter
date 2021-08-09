@@ -1,14 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Escalas</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div>
+        <table id="mainPanel">
+            <tr>
+                <th>Escolha a escala:</th>
+                <th>Insira o valor em graus:</th>
+            </tr>
+            <td>
+                <select name="initialScales" id="scaleInput">
+                    <option value="Kelvin">Kelvin (°K)</option>
+                    <option value="Celcius">Celcius (°C)</option>
+                    <option value="Fahrenheit">Fahrenheit (°F)</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" id="tempValue">
+            </td>
+            <tr>
+                <th>Resultado:</th>
+            </tr>
+            <td>
+                <select name="resultScales" id="scaleOutput">
+                    <option value="KelvinOut">Kelvin (°K)</option>
+                    <option value="CelciusOut">Celcius (°C)</option>
+                    <option value="FahrenheitOut">Fahrenheit (°F)</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" id="tempResult" readonly>
+            </td>
+        </table>
+    </div>
 </body>
 </html>

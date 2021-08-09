@@ -8,8 +8,8 @@ async function openWindow() {
         height:600
     })
 
-    await mainWindow.loadFile('index.html');
+    await mainWindow.loadFile('src/index.html');
 }
 
 //on ready
-app.whenReady().then(openWindow());
+app.whenReady().then(openWindow);
