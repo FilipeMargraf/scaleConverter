@@ -20,25 +20,28 @@
             <td>
                 <select name="initialScales" id="scaleInput">
                     <option value="Kelvin">Kelvin (°K)</option>
-                    <option value="Celcius">Celcius (°C)</option>
+                    <option value="Celcius">Celsius (°C)</option>
                     <option value="Fahrenheit">Fahrenheit (°F)</option>
                 </select>
             </td>
             <td>
-                <input type="text" id="tempValue">
+                <input id="tempValue">
+            </td>
+            <td>
+                <input type="button" value="Calcular" id="btnCalc" onclick="convert(event)">
             </td>
             <tr>
                 <th>Resultado:</th>
             </tr>
             <td>
                 <select name="resultScales" id="scaleOutput">
-                    <option value="KelvinOut">Kelvin (°K)</option>
-                    <option value="CelciusOut">Celcius (°C)</option>
-                    <option value="FahrenheitOut">Fahrenheit (°F)</option>
+                    <option value="Kelvin">Kelvin (°K)</option>
+                    <option value="Celsius">Celsius (°C)</option>
+                    <option value="Fahrenheit">Fahrenheit (°F)</option>
                 </select>
             </td>
             <td>
-                <input type="text" id="tempResult" readonly>
+                <input id="tempResult" readonly>
             </td>
         </table>
     </div>
