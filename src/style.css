@@ -3,20 +3,12 @@
     padding: 0;
 }
 
-body.center {
-    min-height: 100vh;
+div.input-block {
+    display: inline;
 }
 
-div.center-table {
-    position: relative;
-    min-height: 100vh;
-}
-
-div.center-table>table {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+div.output-block {
+    display: inline;
 }
 
 #correction {

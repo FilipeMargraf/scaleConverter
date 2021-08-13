@@ -10,41 +10,30 @@
     <script src="script.js" defer></script>
 </head>
 
-<body class="center">
-    <div class="center-table">
-        <table id="mainPanel">
-            <tr>
-                <th>De:</th>
-                <th>Insira o valor em graus:</th>
-            </tr>
-            <td>
-                <select name="initialScales" id="scaleInput">
-                    <option value="Kelvin">Kelvin (°K)</option>
-                    <option value="Celcius">Celsius (°C)</option>
-                    <option value="Fahrenheit">Fahrenheit (°F)</option>
-                </select>
-            </td>
-            <td>
-                <input id="tempValue">
-            </td>
-            <td>
-                <input type="button" value="Calcular" id="btnCalc" onclick="convert(event)">
-            </td>
-            <tr>
-                <th>Para:</th>
-                <th><p id="correction"></p></th>
-            </tr>
-            <td id="select">
-                <select name="resultScales" id="scaleOutput">
-                    <option value="Kelvin">Kelvin (°K)</option>
-                    <option value="Celsius">Celsius (°C)</option>
-                    <option value="Fahrenheit">Fahrenheit (°F)</option>
-                </select>
-            </td>
-            <td>
-                <input id="tempResult" readonly>
-            </td>
-        </table>
+<body>
+    <div class="center-layout">
+        <div class="input-block">
+            <h2>De:</h2>
+            <select name="initialScales" id="scaleInput">
+                <option value="Kelvin">Kelvin (°K)</option>
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+            </select>
+            <input id="tempValue" placeholder="Insira a temperatura aqui!">
+            <input type="button" value="Calcular" id="btnCalc" onclick="convert(event)"><br>
+        </div>
+
+        <div class="output-block">
+            <h2>Para:</h2>
+            <select name="resultScales" id="scaleOutput">
+                <option value="Kelvin">Kelvin (°K)</option>
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+            </select>
+            <input id="tempResult" readonly>
+            <p id="correction"></p>
+        </div>
     </div>
 </body>
+
 </html>
