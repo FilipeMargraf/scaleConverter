@@ -14,7 +14,7 @@
     <div class="center-table">
         <table id="mainPanel">
             <tr>
-                <th>Escolha a escala:</th>
+                <th>De:</th>
                 <th>Insira o valor em graus:</th>
             </tr>
             <td>
@@ -31,9 +31,10 @@
                 <input type="button" value="Calcular" id="btnCalc" onclick="convert(event)">
             </td>
             <tr>
-                <th>Resultado:</th>
+                <th>Para:</th>
+                <th><p id="correction"></p></th>
             </tr>
-            <td>
+            <td id="select">
                 <select name="resultScales" id="scaleOutput">
                     <option value="Kelvin">Kelvin (°K)</option>
                     <option value="Celsius">Celsius (°C)</option>

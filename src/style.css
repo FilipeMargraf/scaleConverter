@@ -18,3 +18,7 @@ div.center-table>table {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
+
+#correction {
+    color: red;
+}
