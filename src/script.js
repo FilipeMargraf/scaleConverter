@@ -13,37 +13,37 @@ function convert(event) {
         correction.innerHTML = `<p><strong>Mude as escalas para obter resultado diferente!</strong></p>`;
     }
     else if (inputValue == "Kelvin" && outputValue == "Celsius") {
-        result = (273 - tempValue) + "°C";
+        result = ((273 - tempValue)).toFixed(2) + "°C";
         document.getElementById('scaleInput').style.border = "1px solid #000";
         document.getElementById('scaleOutput').style.border = "1px solid #000";
         correction.innerHTML = ``;
     }
     else if (inputValue == "Kelvin" && outputValue == "Fahrenheit") {
-        result = (tempValue - 273) * 1.8 + 32 + "°F";
+        result = ((tempValue - 273) * 1.8 + 32).toFixed(2) + "°F";
         document.getElementById('scaleInput').style.border = "1px solid #000";
         document.getElementById('scaleOutput').style.border = "1px solid #000";
         correction.innerHTML = ``;
     }
     else if (inputValue == "Celsius" && outputValue == "Kelvin") {
-        result = (tempValue + 273) + "K";
+        result = ((parseFloat(tempValue) + parseInt(273))).toFixed(2) + "K";
         document.getElementById('scaleInput').style.border = "1px solid #000";
         document.getElementById('scaleOutput').style.border = "1px solid #000";
         correction.innerHTML = ``;
     }
     else if (inputValue == "Celsius" && outputValue == "Fahrenheit") {
-        result = tempValue * 1.8 + 32 + "°F";
+        result = (tempValue * 1.8 + 32).toFixed(2) + "°F";
         document.getElementById('scaleInput').style.border = "1px solid #000";
         document.getElementById('scaleOutput').style.border = "1px solid #000";
         correction.innerHTML = ``;
     }
     else if (inputValue == "Fahrenheit" && outputValue == "Kelvin") {
-        result = (tempValue - 32) * (5 / 9) + 273 + "K";
+        result = ((tempValue - 32) * (5 / 9) + 273).toFixed(2) + "K";
         document.getElementById('scaleInput').style.border = "1px solid #000";
         document.getElementById('scaleOutput').style.border = "1px solid #000";
         correction.innerHTML = ``;
     }
     else if (inputValue == "Fahrenheit" && outputValue == "Celsius") {
-        result = (tempValue - 32) / 1.8 + "°C"
+        result = ((tempValue - 32) / 1.8).toFixed(2) + "°C"
         document.getElementById('scaleInput').style.border = "1px solid #000";
         document.getElementById('scaleOutput').style.border = "1px solid #000";
         correction.innerHTML = ``;
